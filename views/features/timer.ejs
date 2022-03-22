@@ -1,0 +1,90 @@
+<head>
+  <style>
+    
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pomodoro: hsl(223, 25%, 40%);
+  --shortBreak: hsl(48, 23%, 40%);
+  --longBreak: hsl(105, 16%, 40%);
+}
+
+body {
+  background-color: var(--pomodoro);
+  transition: background-color 1s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  user-select: none;
+}
+
+progress {
+  border-radius: 2px;
+  width: 100%;
+  height: 12px;
+  position: fixed;
+  top: 0;
+}
+
+progress::-webkit-progress-bar {
+ background-color: rgba(0, 0, 0, 0.1);;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fff;
+}
+
+  </style>
+</head>
+
+<div>
+    <main class="app">
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <div class="button-group mode-buttons" id="js-mode-buttons">
+          <button
+            data-mode="pomodoro"
+            class="button active mode-button"
+            id="js-pomodoro"
+          >
+            Pomodoro
+          </button>
+          <button
+            data-mode="shortBreak"
+            class="button mode-button"
+            id="js-short-break"
+          >
+            Short break
+          </button>
+          <button
+            data-mode="longBreak"
+            class="button mode-button"
+            id="js-long-break"
+          >
+            Long break
+          </button>
+        </div>
+        <div class="clock" id="js-clock">
+          <span id="js-minutes">25</span>
+          <span class="separator">:</span>
+          <span id="js-seconds">00</span>
+        </div>
+        <button class="main-button" data-action="start" id="js-btn">
+          Start
+        </button>
+      </div>
+    </main>
+    <div class="hidden">
+      <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+      <audio src="break.mp3" data-sound="shortBreak"></audio>
+      <audio src="break.mp3" data-sound="longBreak"></audio>
+    </div>
+    <script src="javascript/timer.js"></script>
+</div>

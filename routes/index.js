@@ -13,4 +13,8 @@ router.get('/dictionary', (req,res) => {
     res.render('features/dictionary')
 })
 
+router.get ('/timer', (req,res) => {
+    res.render('features/timer')
+})
+
 module.exports = router
