@@ -6,20 +6,22 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+
 body{
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background: #4D59FB;
+  
 }
 ::selection{
   color: #fff;
   background: #4D59FB;
 }
 .wrapper{
+  margin-left: 37vw;
+  margin-top: 10vh;
   width: 420px;
   border-radius: 7px;
-  background: #fff;
+  background: #18bca4;
   padding: 25px 28px 45px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
@@ -73,7 +75,7 @@ body{
 }
 .wrapper .info-text{
   font-size: 13px;
-  color: #9A9A9A;
+  
   margin: -3px 0 -10px;
 }
 .wrapper.active .info-text{
