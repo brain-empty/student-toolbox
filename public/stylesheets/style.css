@@ -1,0 +1,105 @@
+*{
+	border: 0px;
+	margin: 0px;
+}
+
+.logo{
+	height: 70px;
+	width: 70px;
+	border-radius: 20%;
+}
+
+
+
+body{
+	height: 200vh;
+}
+
+header{
+	height: 100px;
+	background: white;
+	display: flex;
+	align-items: center;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+}
+
+.navbar li{
+	list-style: none;
+	font-size: 30px;
+	margin-left: 15px;
+}
+
+.intro-box{
+	height: 80vh;
+	background: #77625C;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: 1fr 0.5fr;
+	grid-template-rows: 0.4fr 1fr ;
+	grid-template-areas:
+	 "quote quote"
+	 "calendar login";
+
+}
+
+
+.quote{
+	background: orange;
+	grid-area: quote;
+}
+
+.calendar{
+	background: red;
+	grid-area: calendar;
+}
+
+.login{
+	background: cadetblue;
+	grid-area: login;
+
+}
+
+
+.quote h1{
+	border: 20px;
+}
+
+.tools{
+	background: #77625C ;
+}
+
+
+.items{
+	display: flex;
+	display: overide;
+}
+
+
+.card {
+
+	width: 250px;
+	height: 350px;
+	background: white;
+	border-radius: 20px;
+	margin: 20px;
+
+
+}
+
+.card img{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+
+}
+
+
+
+/* #include<stdio.h>
+
+ struct times
+{ */
