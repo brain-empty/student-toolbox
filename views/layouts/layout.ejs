@@ -74,6 +74,17 @@
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
             >My Profile</a
           >
+          <%if (locals.user) {%>
+            <div><a href="/user/<%=user.id%>"><%= user.username %></a>
+                <form action="/logout?_method=DELETE" method="POST">
+                    <button class="logout-btn" type="submit">Logout</button>
+                </form></div>
+        <%} else {%>
+            <ul>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Log in</a></li>
+            </ul>
+        <%}%>
         </div>
       </div>
 

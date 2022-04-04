@@ -2,10 +2,14 @@ const express = require ('express')
 const router = express.Router()
 
 router.get('/', (req,res) => {
-    res.render('index')
+    console.log(req.user)
+    var passObj = {user:""}
+    if (req.user) {passObj.user = req.user}
+    res.render('index', passObj)
 })
 
 router.get('/courseyard', (req,res) => {
+    
     res.render('features/courseyard/courseyard')
 })
 
