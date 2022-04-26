@@ -13,6 +13,11 @@ router.get('/courseyard', (req,res) => {
     res.render('features/courseyard/courseyard')
 })
 
+router.get('/notes', (req,res) => {
+    
+    res.render('features/notes')
+})
+
 router.get('/dictionary', (req,res) => {
     res.render('features/dictionary')
 })
