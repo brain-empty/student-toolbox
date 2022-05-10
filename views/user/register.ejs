@@ -1,27 +1,69 @@
 <section>
+  <div>
     <div>
-        <div>
-        <form action="/register" method="POST" >
-            <h2>Register</h2>
-            <label for="username">Username</label>
-            <br>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="email">Email</label>
-            <br>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="password">Password</label>
-            <br>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <label for="confirmpassword">Confirm Password</label>
-            <br>
-            <input type="password" id="confirmpassword" name='confirmpassword' required>
-            <br>
-            <button style="margin:20px" action="submit">Register</button>
-        </form>
-        <p>Already have an account? <a href="/login">Login</a></p>
-        </div>
+      <form action="/register" method="POST"  class="max-w-sm rounded overflow-hidden flex justify-center  items-center shadow-lg">
+           <div>
+          <img
+            class="w-full"
+            src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?w=2000"
+            alt="Sunset in the mountains"
+          />
+        <label for="username">Username</label>
+        <br />
+        <input
+          class="btn btn-primary inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 border-teal-500 hover:border-teal-500 hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          type="text"
+          id="username"
+          name="username"
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input
+          class="btn btn-primary inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 border-teal-500 hover:border-teal-500 hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          class="btn btn-primary inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 border-teal-500 hover:border-teal-500 hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          type="password"
+          id="password"
+          name="password"
+          required
+        />
+        <br />
+        <label for="confirmpassword">Confirm Password</label>
+        <br />
+        <input
+          class="btn btn-primary inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 border-teal-500 hover:border-teal-500 hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          type="password"
+          id="confirmpassword"
+          name="confirmpassword"
+          required
+        />
+        <br />
+        <button
+          class="btn btn-primary inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 border-teal-500 hover:border-teal-500 hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          style="margin: 20px"
+          action="submit"
+        >
+          Register
+        </button>
+        <p>
+          Already have an account?
+          <a
+            class="btn btn-primary inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 border-teal-500 hover:border-teal-500 hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+            href="/login"
+            >Login</a
+          >
+        </p>
+      </form>
     </div>
+  </div>
 </section>
